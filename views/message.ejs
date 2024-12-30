@@ -1,0 +1,10 @@
+<div class="messages">
+  <% for (let i = 0; i < messages.length; i += 1) { %>
+  <div class="message">
+    <h3 class="authorName"><%= messages[i].user %></h3>
+    <p class="messageText"><%= messages[i].text %></p>
+    <p class="addedTime"><%= messages[i].added %></p>
+  </div>
+
+  <% } %>
+</div>
