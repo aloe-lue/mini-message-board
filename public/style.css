@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.messageboard {
+  border-bottom: 1px solid lightgray;
+  background-color: whitesmoke;
+}
+
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  padding: 1rem;
+  font-size: clamp(14px, 5vw, 24px);
+  color: rgb(77, 77, 77);
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: clamp(14px, 5vw, 18px);
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(14px, 5vw, 16px);
+  color: rgb(77, 77, 77);
+  padding: 0.5rem 0.5rem 0.25rem;
+}
+
+.messagesMargins,
+.newMessage,
+.messages,
+.new_message_form {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.newMessage,
+.messages {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  padding: 1rem 1rem 0.25rem;
+  font-size: clamp(14px, 5vw, 18px);
+  color: rgb(77, 77, 77);
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.message {
+  border: 1px solid #77777750;
+  background-color: aliceblue;
+  border-radius: 0.75rem;
+}
+
+.authorName {
+  border-bottom: 1px solid #77777750;
+  padding: 0.5rem 0.25rem;
+}
+
+.messageText {
+  padding: 0.5rem 0.5rem;
+}
+
+.addedTime {
+  padding: 0 0.5rem 0.5rem;
+}
+
+.messageText,
+.authorName,
+.addedTime {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-size: clamp(14px, 5vw, 16px);
+}
+
+.addedTime {
+  text-align: end;
+}
+button {
+  border: 1px solid #cdcdcd;
+  background-color: lightblue;
+  font-size: clamp(14px, 5vw, 18px);
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+  color: rgb(73 73 73);
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+}
+
+input[type="text"] {
+  appearance: none;
+  border: 1px solid #c3c3c3;
+  font-size: clamp(14px, 5vw, 16px);
+  padding: 0.25rem 0.5rem;
+  color: rgb(77, 77, 77);
+  background-color: aliceblue;
+  border-radius: 0.75rem;
+}
+
+input[type="text"]:focus-visible {
+  outline: 2px solid rgb(207, 165, 243);
+  outline-offset: -2px;
+}
+
+fieldset ul > li {
+  display: flex;
+  flex-direction: column;
+}
